@@ -1,9 +1,8 @@
 package com.z.spring.dao;
 
-import org.springframework.stereotype.Repository;
-
 public interface TestSpringDao {
 
-    public void add();
+    public void say();
+    public int add(int a, int b);
 
 }

@@ -18,7 +18,7 @@ public class TestSpringService {
 
     public void add() {
         System.out.println(String.format("@value注解注入：%s",name));
-        testSpringDao.add();
+        testSpringDao.say();
         System.out.println("service---add");
     }
 

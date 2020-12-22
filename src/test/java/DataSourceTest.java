@@ -14,7 +14,7 @@ public class DataSourceTest {
     public static void main(String[] args) throws Exception {
 
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
-        DruidDataSource dataSource = (DruidDataSource) applicationContext.getBean("dataSource");
+        DruidDataSource dataSource = (DruidDataSource) applicationContext.getBean("druidDataSource");
 
 //        Map<String,String> config = new HashMap<>();
 //        config.put("driverClassName","com.mysql.jdbc.Driver");
