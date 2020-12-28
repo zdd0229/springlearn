@@ -125,6 +125,22 @@ public class CustomerDaoImpl implements CustomerDao {
         return ints;
     }
 
+    @Override
+    public Integer addMoney(String custId, Integer money) {
+        String sql="update customers set money = money + ? where cust_id = ?";
 
+        int res = jdbcTemplate.update(sql,money,custId);
+
+        return res;
+    }
+
+    @Override
+    public Integer reduceMoney(String custId, Integer money) {
+        String sql="update customers set money = money - ? where cust_id = ?";
+
+        int res = jdbcTemplate.update(sql,money,custId);
+
+        return res;
+    }
 
 }

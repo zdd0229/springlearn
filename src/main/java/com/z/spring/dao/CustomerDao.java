@@ -23,4 +23,8 @@ public interface CustomerDao {
     int[] batchUpdate();
 
     int[] batchDelete();
+
+    Integer addMoney(String custId,Integer money);
+
+    Integer reduceMoney(String custId,Integer money);
 }

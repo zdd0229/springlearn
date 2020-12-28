@@ -14,5 +14,6 @@ public class Customer {
     private String custCountry;
     private String custContact;
     private String custEmail;
+    private Integer money;
 
 }
